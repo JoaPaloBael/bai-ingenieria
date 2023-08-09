@@ -1,0 +1,12 @@
+.subrayado-dinamico::after{
+    display: block;
+    content: "";
+    height: 2px;
+    background-color: $azul-bai;
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform .3s;
+}
+.subrayado-dinamico:hover::after{
+    transform: scale(1,1);
+}

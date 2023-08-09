@@ -1,0 +1,39 @@
+.nav{
+    background-color: $gris-fondo;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    &__logo{
+        img{
+            width: 100px;
+        }
+    }
+    &__list{
+        list-style: none;
+        display: flex;
+        width: 75%;
+        justify-content: space-evenly;
+        /*Para que quede centrado en el eje horizontal*/
+        align-self: end;
+    padding-bottom: 8px;
+        a{
+            color: $gris-letra;
+            text-decoration: none;
+            font-weight: 700;
+            margin: 3px;
+            &:hover{
+                font-weight: 900;
+            }
+        }
+    }
+    &__contact{
+        display: flex;
+        width: 200px;
+        justify-content: space-evenly;
+        color: $azul-bai;
+        padding: 10px 0;
+        background-color: $gris-fondo-claro;
+        border-radius: 25px;
+    }
+}

@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box; }
+
+.subrayado-dinamico::after {
+  display: block;
+  content: "";
+  height: 2px;
+  background-color: #2D2E88;
+  transform: scale(0);
+  transform-origin: left;
+  transition: transform .3s; }
+
+.subrayado-dinamico:hover::after {
+  transform: scale(1, 1); }
+
+.nav {
+  background-color: #EBEBEB;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center; }
+  .nav__logo img {
+    width: 100px; }
+  .nav__list {
+    list-style: none;
+    display: flex;
+    width: 75%;
+    justify-content: space-evenly;
+    /*Para que quede centrado en el eje horizontal*/
+    align-self: end;
+    padding-bottom: 8px; }
+    .nav__list a {
+      color: #363636;
+      text-decoration: none;
+      font-weight: 700;
+      margin: 3px; }
+      .nav__list a:hover {
+        font-weight: 900; }
+  .nav__contact {
+    display: flex;
+    width: 200px;
+    justify-content: space-evenly;
+    color: #2D2E88;
+    padding: 10px 0;
+    background-color: #F3F3F4;
+    border-radius: 25px; }
