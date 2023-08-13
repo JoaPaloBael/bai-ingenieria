@@ -1,39 +1,70 @@
-.nav{
+.nav {
+    padding: 20px;
     background-color: $gris-fondo;
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    flex-wrap: wrap;
     align-items: center;
-    &__logo{
-        img{
+    justify-content: space-between;
+    &__logo {
+        img {
             width: 100px;
         }
     }
-    &__list{
-        list-style: none;
-        display: flex;
-        width: 75%;
-        justify-content: space-evenly;
-        /*Para que quede centrado en el eje horizontal*/
-        align-self: end;
-    padding-bottom: 8px;
-        a{
-            color: $gris-letra;
-            text-decoration: none;
-            font-weight: 700;
-            margin: 3px;
-            &:hover{
-                font-weight: 900;
+
+    &__icon {
+        background-color: $gris-fondo;
+        border: none;
+        color: $azul-bai;
+        font-size: 40px;
+    }
+    &__container{
+        display: none;
+        flex-basis: 100%;
+        flex-grow: 1;
+        .list {
+            width: 100%;
+            list-style: none;
+            a {
+                display: inline-block;
+                color: $gris-letra;
+                text-decoration: none;
+                font-weight: 700;
+                margin: 3px;
+                padding: 5px;
+    
+                &:hover {
+                    font-weight: 900;
+                }
             }
         }
+        .contact{
+            display: flex;
+            width: 200px;
+            justify-content: space-evenly;
+            color: $azul-bai;
+            padding: 10px 0;
+            background-color: $gris-fondo-claro;
+            border-radius: 25px;
+        }
     }
-    &__contact{
-        display: flex;
-        width: 200px;
-        justify-content: space-evenly;
-        color: $azul-bai;
-        padding: 10px 0;
-        background-color: $gris-fondo-claro;
-        border-radius: 25px;
+}
+
+.collapse{
+    display: block;
+}
+
+@media (min-width: 850px){
+    .nav{
+        &__icon{
+            display: none;
+        }
+        &__container{
+            display: flex;
+            flex-basis: auto;
+            .list{
+                display: flex;
+                justify-content: center;
+            }
+        }
     }
 }

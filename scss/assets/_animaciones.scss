@@ -9,4 +9,11 @@
 }
 .subrayado-dinamico:hover::after{
     transform: scale(1,1);
+    box-shadow: 2px 2px 2px 2px #afafaf42;
+}
+
+.rotation{
+    transition: all 1s ease-in-out;
+    transform: rotate(-90deg);
+    color: #242424;
 }

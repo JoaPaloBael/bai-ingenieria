@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url(../node_modules/animate.css/animate.min.css);
 * {
   margin: 0;
   padding: 0;
@@ -15,36 +16,62 @@
   transition: transform .3s; }
 
 .subrayado-dinamico:hover::after {
-  transform: scale(1, 1); }
+  transform: scale(1, 1);
+  box-shadow: 2px 2px 2px 2px #afafaf42; }
+
+.rotation {
+  transition: all 1s ease-in-out;
+  transform: rotate(-90deg);
+  color: #242424; }
 
 .nav {
+  padding: 20px;
   background-color: #EBEBEB;
   display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  align-items: center; }
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between; }
   .nav__logo img {
     width: 100px; }
-  .nav__list {
-    list-style: none;
-    display: flex;
-    width: 75%;
-    justify-content: space-evenly;
-    /*Para que quede centrado en el eje horizontal*/
-    align-self: end;
-    padding-bottom: 8px; }
-    .nav__list a {
-      color: #363636;
-      text-decoration: none;
-      font-weight: 700;
-      margin: 3px; }
-      .nav__list a:hover {
-        font-weight: 900; }
-  .nav__contact {
-    display: flex;
-    width: 200px;
-    justify-content: space-evenly;
+  .nav__icon {
+    background-color: #EBEBEB;
+    border: none;
     color: #2D2E88;
-    padding: 10px 0;
-    background-color: #F3F3F4;
-    border-radius: 25px; }
+    font-size: 40px; }
+  .nav__container {
+    display: none;
+    flex-basis: 100%;
+    flex-grow: 1; }
+    .nav__container .list {
+      width: 100%;
+      list-style: none; }
+      .nav__container .list a {
+        display: inline-block;
+        color: #363636;
+        text-decoration: none;
+        font-weight: 700;
+        margin: 3px;
+        padding: 5px; }
+        .nav__container .list a:hover {
+          font-weight: 900; }
+    .nav__container .contact {
+      display: flex;
+      width: 200px;
+      justify-content: space-evenly;
+      color: #2D2E88;
+      padding: 10px 0;
+      background-color: #F3F3F4;
+      border-radius: 25px; }
+
+.collapse {
+  display: block; }
+
+@media (min-width: 850px) {
+  .nav__icon {
+    display: none; }
+  .nav__container {
+    display: flex;
+    flex-basis: auto; }
+    .nav__container .list {
+      display: flex;
+      justify-content: center; } }
