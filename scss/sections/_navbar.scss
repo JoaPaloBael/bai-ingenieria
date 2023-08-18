@@ -1,6 +1,6 @@
 .nav {
     padding: 20px;
-    background-color: $gris-fondo;
+    background-color: $gris-2;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -12,7 +12,7 @@
     }
 
     &__icon {
-        background-color: $gris-fondo;
+        background-color: $gris-2;
         border: none;
         color: $azul-bai;
         font-size: 40px;
@@ -43,7 +43,7 @@
             justify-content: space-evenly;
             color: $azul-bai;
             padding: 10px 0;
-            background-color: $gris-fondo-claro;
+            background-color: $gris-3;
             border-radius: 25px;
         }
     }

@@ -1,0 +1,27 @@
+#index{
+    .contenedor{
+        margin: auto;
+        .desarrollo{
+            background-image: url('../../img/bai_fondo-index_mob_750x500.jpg');
+            background-size: cover;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 15vh);
+            text-align: center;
+            h3{
+                background-color: #ffffffbf;
+                margin: 10px;
+                border: $gris-1 solid 1px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover{
+                    transition: .3s ease-in-out;
+                    
+                    background-color: $azul-bai;
+                    color: white;
+                }
+            }
+        }
+    }
+}
