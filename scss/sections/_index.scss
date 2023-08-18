@@ -2,7 +2,7 @@
     .contenedor{
         margin: auto;
         .desarrollo{
-            background-image: url('../../img/bai_fondo-index_mob_750x500.jpg');
+            background-image: url('../img/bai_fondo-index_mob_750x500.jpg');
             background-size: cover;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -43,7 +43,7 @@
     #index{
         .contenedor{
             .desarrollo{
-                background-image: url('../../img/bai_fondo-index_desk_1920x850.jpg');
+                background-image: url('../img/bai_fondo-index_desk_1920x850.jpg');
             }
         }
     }

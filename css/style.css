@@ -78,7 +78,7 @@
 
 .header {
   min-height: 50vh;
-  background-image: url("../../img/banner-principal_mob-02.jpg");
+  background-image: url("../img/banner-principal_mob-02.jpg");
   background-size: cover;
   color: white;
   display: flex;
@@ -94,14 +94,14 @@
 
 @media (min-width: 750px) {
   .header {
-    background-image: url("../../img/banner-principal.jpg"); }
+    background-image: url("../img/banner-principal.jpg"); }
     .header h1 {
       font-size: 76px; } }
 
 #index .contenedor {
   margin: auto; }
   #index .contenedor .desarrollo {
-    background-image: url("../../img/bai_fondo-index_mob_750x500.jpg");
+    background-image: url("../img/bai_fondo-index_mob_750x500.jpg");
     background-size: cover;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -128,4 +128,4 @@
 
 @media (min-width: 1100px) {
   #index .contenedor .desarrollo {
-    background-image: url("../../img/bai_fondo-index_desk_1920x850.jpg"); } }
+    background-image: url("../img/bai_fondo-index_desk_1920x850.jpg"); } }
