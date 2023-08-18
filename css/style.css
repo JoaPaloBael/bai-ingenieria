@@ -1,9 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 @import url(../css/animate.css/animate.css);
+@font-face {
+  src: url(../recursos/typo/HelveticaNowDisplay.ttf);
+  font-family: 'Helvetica Now Display'; }
+
+@font-face {
+  src: url(../recursos/typo/HelveticaNowDisplayBdIt.ttf);
+  font-family: 'Helvetica Now Display Italic';
+  font-style: italic; }
+
+@font-face {
+  src: url(../recursos/typo/HelveticaNowDisplayBold.ttf);
+  font-family: 'Helvetica Now Display bold';
+  font-weight: bold; }
+
+@font-face {
+  src: url(../recursos/typo/HelveticaNowDisplayXBlk.otf);
+  font-family: 'Helvetica Now Display black';
+  font-weight: bolder; }
+
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Helvetica Now Display';
   box-sizing: border-box; }
 
 .subrayado-dinamico::after {
@@ -87,10 +106,11 @@
   align-items: start;
   padding: 50px; }
   .header h1 {
-    font-weight: 900;
+    font-family: 'Helvetica Now Display black';
     font-size: 46px; }
     .header h1 .span {
-      display: block; }
+      display: block;
+      font-family: 'Helvetica Now Display'; }
 
 @media (min-width: 750px) {
   .header {
